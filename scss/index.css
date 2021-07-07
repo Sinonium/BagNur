@@ -1,42 +1,38 @@
 @font-face {
   font-family: 'San Francisco Pro';
-  src: local("San Francisco Pro Display Regular"), local("San-Francisco-Pro-Display-Regular"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'San Francisco Pro';
-  src: local("San Francisco Pro Display Semibold"), local("San-Francisco-Pro-Display-Semibold"), url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SFProDisplay-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'San Francisco Pro';
-  src: local("San Francisco Pro Display Medium"), local("San-Francisco-Pro-Display-Medium"), url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'San Francisco Pro';
-  src: local("San Francisco Pro Display Bold"), local("San-Francisco-Pro-Display-Bold"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
+  src: url("../fonts/SF-Pro-Display-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'San Francisco Pro';
-  src: local("San Francisco Pro Display Light"), local("San-Francisco-Pro-Display-Light"), url("../fonts/SFProDisplay-Light.woff2") format("woff2"), url("../fonts/SFProDisplay-Light.woff") format("woff"), url("../fonts/SFProDisplay-Light.ttf") format("truetype");
+  src: url("../fonts/SF-Pro-Display-Semibold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: url("../fonts/SF-Pro-Display-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: url("../../fonts/SF-Pro-Display-Light.woff") format("woff");
   font-weight: 300;
-  font-style: normal;
 }
 
 .header {
-  background: url("../../images/main-background.png") center no-repeat;
-  max-width: 100%;
-  min-height: 950px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .header__panel {
@@ -50,16 +46,33 @@
 }
 
 .header__burger-btn {
-  max-width: 20px;
-}
-
-.header__burger-btn button {
-  background-color: inherit;
-  border: none;
-}
-
-.header__burger-btn button:hover {
   cursor: pointer;
+  margin-top: 3px;
+}
+
+.header__burger-btn span {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+}
+
+.header__burger-btn span::after, .header__burger-btn span::before {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  border-radius: 3px;
+  background-color: inherit;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.header__burger-btn span::before {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .header__logo {
@@ -120,13 +133,20 @@
 }
 
 .header__get-in-touch {
-  margin-left: 160px;
+  margin-left: auto;
   font-family: 'San Francisco Pro';
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   color: #FFFFFF;
   max-width: 80px;
+}
+
+.hero {
+  background: url("../../images/background.png") no-repeat;
+  background-size: cover;
+  background-position: center -20vh;
+  height: 100vh;
 }
 
 .services {
@@ -244,7 +264,7 @@ a {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 

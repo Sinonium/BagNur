@@ -1,7 +1,7 @@
-@import './fonts';
+@import './helpers/fonts';
 @import './components/header';
-@import './components/services';
-
+@import './sections/hero';
+@import './sections/services';
 
 body{
     margin: 0;
@@ -15,7 +15,7 @@ a{
 }
 
 .container{
-    max-width: 1080px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 
