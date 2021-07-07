@@ -60,6 +60,7 @@
 }
 
 .header__burger-btn span::after, .header__burger-btn span::before {
+  position: absolute;
   content: "";
   cursor: pointer;
   background-color: #FFFFFF;
