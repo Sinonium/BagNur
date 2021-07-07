@@ -61,11 +61,11 @@
 
 .header__burger-btn span::after, .header__burger-btn span::before {
   content: "";
-  position: absolute;
+  cursor: pointer;
+  background-color: #FFFFFF;
   width: inherit;
   height: inherit;
   border-radius: 3px;
-  background-color: inherit;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
@@ -253,8 +253,7 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10;
   background-color: #E5E5E5;
 }
 

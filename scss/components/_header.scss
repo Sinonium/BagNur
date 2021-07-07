@@ -21,11 +21,11 @@
             &::after,
             &::before{
                 content: "";
-                position: absolute;
+                cursor: pointer;
+                background-color: #FFFFFF;
                 width: inherit;
                 height: inherit;
                 border-radius: 3px;
-                background-color: inherit;
                 transform: translateY(-10px);
             }
             &::before{
