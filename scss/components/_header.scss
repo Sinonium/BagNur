@@ -8,12 +8,37 @@
         padding-top: 74px;
     }
     &__burger-btn{
+<<<<<<< HEAD
+        cursor: pointer;
+        margin-top: 3px;
+        span{
+            display: inline-block;
+            position: relative;
+            background-color: #fff;
+            width: 18px;
+            height: 2px;
+            border-radius: 3px;
+            &::before,
+            &::after{
+                content: "";    
+                position: absolute;
+                width: inherit;
+                height: inherit;
+                border-radius: 3px;
+                background-color: inherit;
+                transform: translateY(-5px);
+            }
+            &::after{
+                transform: translateY(-10px);
+                
+=======
         max-width: 20px;
         & button{
             background-color: inherit;
             border: none;
             &:hover{
                 cursor: pointer;
+>>>>>>> 309b6193ea33a231537b39d3a302c5733dba413b
             }
         }
     }
