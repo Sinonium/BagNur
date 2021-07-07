@@ -39,9 +39,117 @@
   min-height: 950px;
 }
 
+.header__panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 74px;
+}
+
+.header__burger-btn {
+  max-width: 20px;
+}
+
+.header__burger-btn button {
+  background-color: inherit;
+  border: none;
+}
+
+.header__burger-btn button:hover {
+  cursor: pointer;
+}
+
+.header__logo {
+  font-family: 'San Francisco Pro';
+  font-weight: Bold;
+  color: white;
+  font-size: 20px;
+  max-width: 110px;
+  margin-left: 41px;
+}
+
+.header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__search svg {
+  max-width: 18px;
+  margin: 0 25px 0 120px;
+  opacity: 0.5;
+}
+
+.header__search svg:hover {
+  cursor: pointer;
+}
+
+.header__search-text {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.header__search-text:hover {
+  cursor: pointer;
+}
+
+.header__navigation {
+  margin-left: 160px;
+}
+
+.header__navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__navigation ul li {
+  margin-right: 35px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.header__get-in-touch {
+  margin-left: 160px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
+  max-width: 80px;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #E5E5E5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 /*# sourceMappingURL=index.css.map */
