@@ -1,14 +1,14 @@
 .header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background: url('../../images/main-background.png') center no-repeat; 
+    max-width: 100%;
+    min-height: 950px;
     &__panel{
         display: flex;
         align-items: center;
         padding-top: 74px;
     }
     &__burger-btn{
+<<<<<<< HEAD
         cursor: pointer;
         margin-top: 3px;
         span{
@@ -31,6 +31,14 @@
             &::after{
                 transform: translateY(-10px);
                 
+=======
+        max-width: 20px;
+        & button{
+            background-color: inherit;
+            border: none;
+            &:hover{
+                cursor: pointer;
+>>>>>>> 309b6193ea33a231537b39d3a302c5733dba413b
             }
         }
     }
@@ -79,7 +87,7 @@
         }
     }
     &__get-in-touch{
-        margin-left: auto;
+        margin-left: 160px;
         font-family: 'San Francisco Pro';
         font-style: normal;
         font-weight: bold;

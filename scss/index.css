@@ -1,38 +1,55 @@
 @font-face {
+<<<<<<< HEAD
   font-family: "San Francisco Pro";
   src: url("../fonts/SF-Pro-Display-Bold.woff") format("woff");
   font-weight: 7001;
-}
-
-@font-face {
-  font-family: "San Francisco Pro";
-  src: url("../fonts/SF-Pro-Display-Semibold.woff") format("woff");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "San Francisco Pro";
-  src: url("../fonts/SF-Pro-Display-Medium.woff") format("woff");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "San Francisco Pro";
-  src: url("../fonts/SF-Pro-Display-Regular.woff") format("woff");
+=======
+  font-family: 'San Francisco Pro';
+  src: local("San Francisco Pro Display Regular"), local("San-Francisco-Pro-Display-Regular"), url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff"), url("../fonts/SFProDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+>>>>>>> 309b6193ea33a231537b39d3a302c5733dba413b
 }
 
 @font-face {
-  font-family: "San Francisco Pro";
-  src: url("../../fonts/SF-Pro-Display-Light.woff") format("woff");
+  font-family: 'San Francisco Pro';
+  src: local("San Francisco Pro Display Semibold"), local("San-Francisco-Pro-Display-Semibold"), url("../fonts/SFProDisplay-Semibold.woff2") format("woff2"), url("../fonts/SFProDisplay-Semibold.woff") format("woff"), url("../fonts/SFProDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local("San Francisco Pro Display Medium"), local("San-Francisco-Pro-Display-Medium"), url("../fonts/SFProDisplay-Medium.woff2") format("woff2"), url("../fonts/SFProDisplay-Medium.woff") format("woff"), url("../fonts/SFProDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local("San Francisco Pro Display Bold"), local("San-Francisco-Pro-Display-Bold"), url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff"), url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: local("San Francisco Pro Display Light"), local("San-Francisco-Pro-Display-Light"), url("../fonts/SFProDisplay-Light.woff2") format("woff2"), url("../fonts/SFProDisplay-Light.woff") format("woff"), url("../fonts/SFProDisplay-Light.ttf") format("truetype");
   font-weight: 300;
+  font-style: normal;
 }
 
 .header {
+<<<<<<< HEAD
   position: absolute;
   top: 10;
   left: 0;
   width: 100%;
+=======
+  background: url("../../images/main-background.png") center no-repeat;
+  max-width: 100%;
+  min-height: 950px;
+>>>>>>> 309b6193ea33a231537b39d3a302c5733dba413b
 }
 
 .header__panel {
@@ -46,33 +63,16 @@
 }
 
 .header__burger-btn {
-  cursor: pointer;
-  margin-top: 3px;
+  max-width: 20px;
 }
 
-.header__burger-btn span {
-  display: inline-block;
-  position: relative;
-  background-color: #fff;
-  width: 18px;
-  height: 2px;
-  border-radius: 3px;
-}
-
-.header__burger-btn span::before, .header__burger-btn span::after {
-  content: "";
-  position: absolute;
-  width: inherit;
-  height: inherit;
-  border-radius: 3px;
+.header__burger-btn button {
   background-color: inherit;
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  border: none;
 }
 
-.header__burger-btn span::after {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+.header__burger-btn button:hover {
+  cursor: pointer;
 }
 
 .header__logo {
@@ -133,7 +133,7 @@
 }
 
 .header__get-in-touch {
-  margin-left: auto;
+  margin-left: 160px;
   font-family: 'San Francisco Pro';
   font-style: normal;
   font-weight: bold;
@@ -142,6 +142,7 @@
   max-width: 80px;
 }
 
+<<<<<<< HEAD
 .hero {
   background: url("../../images/main-background.png") no-repeat;
   background-position: center -221vh;
@@ -151,6 +152,114 @@
 
 body {
   margin: 10;
+=======
+.services {
+  text-align: center;
+  margin: 125px;
+}
+
+.services__text {
+  background: url(../../images/TRAVEL.png) center no-repeat;
+  max-width: 750px;
+  min-height: 220px;
+  margin: 0 auto;
+}
+
+.services__badge {
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 30px;
+  background-color: #f1ddc9;
+  border-radius: 30px;
+}
+
+.services__badge span {
+  font-family: 'San Francisco Pro';
+  font-style: Heavy;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #E62E7B;
+}
+
+.services__title h2 {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: #7D8FB3;
+}
+
+.services__title h2 span {
+  font-family: 'San Francisco Pro';
+  font-style: bold;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 60px;
+  color: #4D5E80;
+}
+
+.services__description {
+  padding: 65px 50px 0;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  color: #7D8FB3;
+}
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px;
+}
+
+.services__list div {
+  max-width: 160px;
+  min-height: 255px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 5px rgba(54, 61, 77, 0.05);
+          box-shadow: 0px 2px 5px rgba(54, 61, 77, 0.05);
+  border-radius: 10px;
+}
+
+.services__list div svg {
+  margin: 50px 50px 67px;
+}
+
+.services__list div span {
+  margin-bottom: 50px;
+  font-family: 'San Francisco Pro';
+  font-style: Heavy;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6B7A99;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+>>>>>>> 309b6193ea33a231537b39d3a302c5733dba413b
   background-color: #E5E5E5;
 }
 
@@ -160,7 +269,7 @@ a {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
