@@ -1,10 +1,11 @@
-@import './fonts';
-@import './components/header';
+@import '../scss/helpers/fonts';
+@import '../scss/helpers/mixins';
 
+@import './components/header';
+@import './sections/hero';
 
 body{
     margin: 0;
-    padding: 0;
     background-color: #E5E5E5;
 }
 
@@ -14,7 +15,7 @@ a{
 }
 
 .container{
-    max-width: 1080px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 
