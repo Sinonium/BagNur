@@ -4,10 +4,10 @@
     background-position: center -20vh;
     height: 100vh;
     &__content{
+        position: relative;
         padding-top: 235px;
-        
         text-align: center;
-        max-width: 630px;
+        max-width: 800px;
         margin: 0 auto;
     }
     &__title{
@@ -17,6 +17,47 @@
         color: #FFFFFF;
         & span{
             font-weight: 800;
+        }
+    }
+    &__socials{
+        position: absolute;
+        left: -19%;
+        top: 52%;
+        & ul li{
+            cursor: pointer;
+            margin-bottom: 37px;
+        }
+    }
+    &__form{
+        margin-top: 60px;
+        & ul{
+            display: flex;  
+            text-align: start;
+            li{
+                border: 1px solid #ffffff5b;
+                padding: 16px 20px;
+            }
+        }
+        &__description{
+            display: inline-block;
+            width: 65px;
+            @include font(12px, 600, 20px);
+            color: #FFFFFF;
+            opacity: 0.6;
+        }
+        &__data{
+            display: inline-block;
+            margin-top: 10px;
+            max-width: 85px;
+            @include font(12px, 600, 20px);
+            color: #FFFFFF;
+        }
+        &__search{
+            @include font(16px, 700, 30px);
+            display: inline-block;
+            margin-top: 9px;
+            color: #FFFFFF;
+            cursor: pointer;
         }
     }
 }

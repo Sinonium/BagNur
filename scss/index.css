@@ -175,9 +175,10 @@
 }
 
 .hero__content {
+  position: relative;
   padding-top: 235px;
   text-align: center;
-  max-width: 630px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -194,6 +195,69 @@
 
 .hero__title span {
   font-weight: 800;
+}
+
+.hero__socials {
+  position: absolute;
+  left: -19%;
+  top: 52%;
+}
+
+.hero__socials ul li {
+  cursor: pointer;
+  margin-bottom: 37px;
+}
+
+.hero__form {
+  margin-top: 60px;
+}
+
+.hero__form ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: start;
+}
+
+.hero__form ul li {
+  border: 1px solid #ffffff5b;
+  padding: 16px 20px;
+}
+
+.hero__form__description {
+  display: inline-block;
+  width: 65px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.hero__form__data {
+  display: inline-block;
+  margin-top: 10px;
+  max-width: 85px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.hero__form__search {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: inline-block;
+  margin-top: 9px;
+  color: #FFFFFF;
+  cursor: pointer;
 }
 
 .services {
