@@ -156,7 +156,7 @@
 }
 
 .services__text {
-  background: url(../../images/TRAVEL.png) center no-repeat;
+  background: url("../../images/TRAVEL.png") center no-repeat;
   max-width: 750px;
   min-height: 220px;
   margin: 0 auto;
