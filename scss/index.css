@@ -28,6 +28,30 @@
   font-weight: 300;
 }
 
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 30px;
+  background-color: #FF6633;
+  border-radius: 30px;
+}
+
+.label span {
+  font-family: 'San Francisco Pro';
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+}
+
 .header {
   position: absolute;
   left: 0;
@@ -93,7 +117,7 @@
 
 .header__search svg {
   max-width: 18px;
-  margin: 0 25px 0 120px;
+  margin: 0 30px 0 130px;
   opacity: 0.5;
 }
 
@@ -115,7 +139,7 @@
 }
 
 .header__navigation {
-  margin-left: 160px;
+  margin-left: 200px;
 }
 
 .header__navigation ul {
@@ -148,6 +172,28 @@
   background-size: cover;
   background-position: center -20vh;
   height: 100vh;
+}
+
+.hero__content {
+  padding-top: 235px;
+  text-align: center;
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 70px;
+  margin-top: 65px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.hero__title span {
+  font-weight: 800;
 }
 
 .services {
@@ -261,6 +307,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
 }
 
 .container {
