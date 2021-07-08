@@ -1,4 +1,7 @@
 @import './helpers/fonts';
+@import './helpers/mixins';
+@import './components/label';
+
 @import './components/header';
 @import './sections/hero';
 @import './sections/services';
@@ -11,6 +14,9 @@ body{
 a{
     text-decoration: none;
     color:inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
 }
 
 .container{
