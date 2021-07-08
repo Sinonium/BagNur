@@ -1,0 +1,22 @@
+.hero{
+    background: url('../../images/background.png') no-repeat; 
+    background-size: cover;
+    background-position: center -20vh;
+    height: 100vh;
+    &__content{
+        padding-top: 235px;
+        
+        text-align: center;
+        max-width: 630px;
+        margin: 0 auto;
+    }
+    &__title{
+        @include font(48px, normal, 70px);
+        margin-top: 65px;   
+        text-align: center;
+        color: #FFFFFF;
+        & span{
+            font-weight: 800;
+        }
+    }
+}
