@@ -22,7 +22,7 @@
     &__socials{
         position: absolute;
         left: -19%;
-        top: 52%;
+        top: 43%;
         & ul li{
             cursor: pointer;
             margin-bottom: 37px;
@@ -60,4 +60,62 @@
             cursor: pointer;
         }
     }
+    &__info{
+        display: flex;
+        margin-top: 80px;
+        & span{
+            display: inline-block;
+            max-width: 150px;
+            text-align: start;
+            margin-left: 40px;
+            @include font(14px, 800, 30px);
+            color: #FFFFFF;
+        }
+        & svg{
+            margin-bottom: 24px;
+        }
+        &-addres{
+            max-width: 270px;
+            margin-right: 65px;
+        }
+        &-time{
+            max-width: 270px;
+            margin-right: 86px;
+        }
+        &-phone{
+            max-width: 270px;
+        }
+    }
+    &__slider__items{
+        &-dest{
+            position: absolute;
+            right: -30%;
+            top: 57%;      
+            transform: rotate(-90deg);
+            & span{
+                display: inline-block;
+                max-width: 200px; 
+                @include font(16px, 600, 30px);
+                color: #FFFFFF; 
+            }
+            & svg{
+                transform: rotate(90deg);
+                margin-right: 28px;
+            }
+        }
+        &-arrows{
+            cursor: pointer;
+            .next{
+                position: absolute;
+                right: -19.5%;
+                top: 31%
+            }
+            .prev{
+                position: absolute;
+                right: -19.5%;
+                bottom: 2%;
+            }
+        }
+    }
 }
+

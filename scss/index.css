@@ -200,7 +200,7 @@
 .hero__socials {
   position: absolute;
   left: -19%;
-  top: 52%;
+  top: 43%;
 }
 
 .hero__socials ul li {
@@ -258,6 +258,85 @@
   margin-top: 9px;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.hero__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+}
+
+.hero__info span {
+  display: inline-block;
+  max-width: 150px;
+  text-align: start;
+  margin-left: 40px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.hero__info svg {
+  margin-bottom: 24px;
+}
+
+.hero__info-addres {
+  max-width: 270px;
+  margin-right: 65px;
+}
+
+.hero__info-time {
+  max-width: 270px;
+  margin-right: 86px;
+}
+
+.hero__info-phone {
+  max-width: 270px;
+}
+
+.hero__slider__items-dest {
+  position: absolute;
+  right: -30%;
+  top: 57%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.hero__slider__items-dest span {
+  display: inline-block;
+  max-width: 200px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.hero__slider__items-dest svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-right: 28px;
+}
+
+.hero__slider__items-arrows {
+  cursor: pointer;
+}
+
+.hero__slider__items-arrows .next {
+  position: absolute;
+  right: -19.5%;
+  top: 31%;
+}
+
+.hero__slider__items-arrows .prev {
+  position: absolute;
+  right: -19.5%;
+  bottom: 2%;
 }
 
 .services {
