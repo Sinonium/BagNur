@@ -1,10 +1,14 @@
 @import './helpers/fonts';
 @import './helpers/mixins';
 @import './components/label';
+@import './components/title';
+@import './components/description';
 
 @import './components/header';
 @import './sections/hero';
 @import './sections/services';
+@import './sections/promo';
+@import './sections/reviews';
 
 body{
     margin: 0;

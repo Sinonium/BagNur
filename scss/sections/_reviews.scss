@@ -1,0 +1,22 @@
+.reviews{
+    background: url(../images/INSTA.png) center no-repeat;
+    background-position:top;
+    text-align: center;
+    &__text{
+        max-width: 750px;
+        min-height: 220px;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+    .reviews__insta{
+        position: relative;
+      img{
+          max-width: 245px;
+          max-height: 245px;
+          margin: 13px;
+      }
+      
+    }
+}
+
+  

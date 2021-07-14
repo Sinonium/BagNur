@@ -1,0 +1,29 @@
+.promo{
+    background: url('../images/TOURS.png') center no-repeat;
+    background-position:top;
+    text-align: center;
+    margin: 95px;
+    &__text{
+        max-width: 750px;
+        min-height: 220px;
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+    &__description{
+        padding: 35px 50px 0;
+    }
+    }
+.promo__list{
+    display: grid;
+    grid-template-columns: 190px  190px  190px  190px 190px  190px ;
+    grid-auto-rows: 175px;
+    .promo-1 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .promo-4{
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+}
