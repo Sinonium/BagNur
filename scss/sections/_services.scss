@@ -1,57 +1,15 @@
 .services{
+    background: url('../images/TRAVEL.png') center no-repeat;
+    background-position:top;
     text-align: center;
-    margin: 125px;
+    margin: 95px;
     &__text{
-        background: url('../../images/TRAVEL.png') center no-repeat;
         max-width: 750px;
         min-height: 220px;
         margin: 0 auto;
     }
-    &__badge{
-            text-align: center;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 80px;
-            height: 30px;
-            background-color:#f1ddc9;
-            border-radius: 30px;
-            span{
-                font-family:'San Francisco Pro';
-                font-style: Heavy;
-                font-weight: bold;
-                font-size: 12px;
-                line-height: 20px;
-                color: #E62E7B;
-            }
-        }
-    &__title{
-        h2{
-        font-family: 'San Francisco Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 60px;
-        color: #7D8FB3;
-        span{
-            font-family: 'San Francisco Pro';
-            font-style: bold;
-            font-weight: 800; 
-            font-size: 36px;
-            line-height: 60px; 
-            color: #4D5E80;
-        }
-        } 
-    }
     &__description{
         padding: 65px 50px 0;
-        font-family:'San Francisco Pro';
-        font-style:  normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 30px;
-        color: #7D8FB3;
     }
     &__list{
         display: flex;
@@ -65,19 +23,22 @@
             background-color: #FFFFFF;
             box-shadow: 0px 2px 5px rgba(54, 61, 77, 0.05);
             border-radius: 10px;
+            transition: 0.5s;
+            cursor: pointer;
             svg{
               margin: 50px 50px 67px;
             }
+            &:hover{
+                transform: scale(1.1);
+            }
             span{
                 margin-bottom: 50px;
-                font-family:'San Francisco Pro';
-                font-style: Heavy;
-                font-weight: bold;
-                font-size: 12px;
-                line-height: 20px;
+                @include font (12px, 800, 20px);
                 color:#6B7A99 ;
             }
         }
     }
 }
+
+
 
