@@ -59,11 +59,12 @@ h2 {
   font-size: 36px;
   line-height: 60px;
   color: #7D8FB3;
+  text-align: center;
 }
 
 h2 span {
   font-family: 'San Francisco Pro';
-  font-style: bold;
+  font-style: normal;
   font-weight: 800;
   font-size: 36px;
   line-height: 60px;
@@ -77,6 +78,8 @@ h2 span {
   font-size: 14px;
   line-height: 30px;
   color: #7D8FB3;
+  text-align: center;
+  max-width: 630px;
 }
 
 .header {
@@ -227,7 +230,7 @@ h2 span {
 .hero__socials {
   position: absolute;
   left: -19%;
-  top: 43%;
+  top: 34%;
 }
 
 .hero__socials ul li {
@@ -328,7 +331,7 @@ h2 span {
 .hero__slider__items-dest {
   position: absolute;
   right: -30%;
-  top: 57%;
+  top: 45%;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
@@ -357,13 +360,35 @@ h2 span {
 .hero__slider__items-arrows .next {
   position: absolute;
   right: -19.5%;
-  top: 31%;
+  top: 25%;
 }
 
 .hero__slider__items-arrows .prev {
   position: absolute;
   right: -19.5%;
-  bottom: 2%;
+  bottom: 23%;
+}
+
+.hero__scroll-btn {
+  margin-top: 155px;
+}
+
+.hero__scroll-btn button {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #7D8FB3;
+  padding: 10px 25px;
+  background: #FFFFFF;
+  border: none;
+  -webkit-box-shadow: 0px 10px 30px rgba(54, 61, 77, 0.05);
+          box-shadow: 0px 10px 30px rgba(54, 61, 77, 0.05);
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
 }
 
 .services {
@@ -467,6 +492,143 @@ h2 span {
   grid-column-end: 6;
 }
 
+.booking__title {
+  margin-bottom: 65px;
+}
+
+.booking__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+.booking__filter__block {
+  max-width: 230px;
+}
+
+.booking__filter__block-item {
+  background: #FFFFFF;
+  border: 2px solid #F5F6F7;
+  min-height: 94px;
+}
+
+.booking__filter__block-item span {
+  display: inline-block;
+  width: 120px;
+  height: 20px;
+  margin: 20px 0 10px 20px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6B7A99;
+}
+
+.booking__filter__block-item span.last {
+  margin: 0 0 20px 20px;
+}
+
+.booking__filter__block-item.tour-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px 0px 0px 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4D5E80;
+}
+
+.booking__filter__block-item.apply {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 30px;
+  color: #3361FF;
+  cursor: pointer;
+}
+
+.booking__filter__block-item svg {
+  margin: -20px 0 20px 40px;
+}
+
+.booking__filter__settings {
+  max-width: 230px;
+  background-color: #fff;
+  border: 2px solid #F5F6F7;
+  min-height: 100px;
+}
+
+.booking__filter__settings span {
+  display: inline-block;
+  margin: 15px 0 10px 20px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6B7A99;
+}
+
+.booking__load-more {
+  padding: 42px 0 42px;
+  margin-bottom: 130px;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #F5F6F7;
+  border-radius: 0px 0px 10px 10px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 25px;
+  color: #7D8FB3;
+  cursor: pointer;
+}
+
+.booking__filter__settings-value {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 20px;
+  color: #6B7A99;
+}
+
+.booking__filter__settings-value span {
+  margin: 12px 20px 15px;
+}
+
 .reviews {
   background: url(../images/INSTA.png) center no-repeat;
   background-position: top;
@@ -488,6 +650,10 @@ h2 span {
   max-width: 245px;
   max-height: 245px;
   margin: 13px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

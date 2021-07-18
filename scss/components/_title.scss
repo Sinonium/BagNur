@@ -1,16 +1,9 @@
 h2{
-    font-family: 'San Francisco Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 60px;
+    @include font(36px, 400, 60px);
     color: #7D8FB3;
+    text-align: center;
     span{
-        font-family: 'San Francisco Pro';
-        font-style: bold;
-        font-weight: 800; 
-        font-size: 36px;
-        line-height: 60px; 
+        @include font(36px, 800, 60px);
         color: #4D5E80;
     }
     } 

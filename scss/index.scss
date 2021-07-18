@@ -8,7 +8,12 @@
 @import './sections/hero';
 @import './sections/services';
 @import './sections/promo';
+@import './sections/booking';
 @import './sections/reviews';
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
