@@ -1,0 +1,36 @@
+footer{
+    background-color: #0D111A ;
+    display: flex;
+    .contacts{
+        display: grid;
+        grid-template-columns: 270px  210px ;
+        grid-auto-rows: 70px;
+        padding: 83px 125px 82px 183px;
+        .footer-item{
+            position: relative;
+            svg{
+                position: absolute;
+                right: 110%;
+                padding-top: 5px;
+            }
+            span{
+                @include font(13px, 700, 25px);
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+.menu{
+   ul{
+       display: grid;
+       grid-template-columns: 80px  80px  80px 80px;
+       grid-auto-rows: 40px;
+       grid-column-gap: 10px;
+       grid-row-gap: 10px;
+       padding: 83px 125px 82px 183px;
+        li{
+            @include font(13px, 700, 25px);
+            color: #FFFFFF;
+        }
+   }
+}

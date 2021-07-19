@@ -18,12 +18,177 @@
     grid-template-columns: 190px  190px  190px  190px 190px  190px ;
     grid-auto-rows: 175px;
     .promo-1 {
+        background-color: rgba (0,0,0,.3);
+        position: relative;
         grid-column-start: 1;
         grid-row-start: 1;
         grid-row-end: 3;
+        .promo__text{
+            position: absolute;
+            top: 0 ;
+            padding-top: 40px;
+            left: 5%;
+            span{
+                @include font(12px, 700, 20px);
+                color:#FFFFFF ; 
+            }
+            h4{
+                @include font(24px, 600, 30px);
+                color:#FFFFFF ;
+                margin: 15px 47px 140px;
+            }
+            div{
+                margin-bottom: 36px;
+            }
+        }
+    }
+    .promo-3{
+        position: relative; 
+        .promo__text-1{
+            position: absolute;
+            top: 0 ;
+            padding-top: 25px;
+            span{
+                @include font(12px, 700, 20px);
+                color:#FFFFFF ; 
+                margin: 25px 69px  25px 25px;
+                svg{
+                    padding-right: 15px;
+                }
+            }
+            h4{
+                @include font(24px, 600, 30px);
+                color:#FFFFFF ;
+                margin: 25px 84px  25px 25px;
+            }
+        }
     }
     .promo-4{
         grid-column-start: 4;
         grid-column-end: 6;
+        position: relative; 
+        .promo__text-2{
+            position: absolute;
+            top: 0 ;
+            padding-top: 25px;
+            span{
+                @include font(12px, 700, 20px);
+                color:#FFFFFF ; 
+                margin: 25px 69px  25px 25px;
+                svg{
+                    padding-right: 15px;
+                }
+            }
+            h4{
+                @include font(24px, 600, 30px);
+                color:#FFFFFF ;
+                margin: 25px 84px  25px 25px;
+            }
+        }
+    }
+    .promo-5{
+        position: relative; 
+        .promo__text-3{
+            position: absolute;
+            top: 0 ;
+            padding-top: 25px;
+            span{
+                @include font(12px, 700, 20px);
+                color:#FFFFFF ; 
+                margin: 25px 69px  25px 25px;
+                svg{
+                    padding-right: 15px;
+                }
+            }
+            h4{
+                @include font(24px, 600, 30px);
+                color:#FFFFFF ;
+                margin: 25px 84px  25px 25px;
+            }
+        }
+    }
+    .promo-6{
+        position: relative; 
+        .promo__text-4{
+            position: absolute;
+            top: 0 ;
+            padding-top: 25px;
+            span{
+                @include font(12px, 700, 20px);
+                color:#FFFFFF ; 
+                margin: 25px 69px  25px 25px;
+                svg{
+                    padding-right: 15px;
+                }
+            }
+            h4{
+                @include font(24px, 600, 30px);
+                color:#FFFFFF ;
+                margin: 25px 84px  25px 25px;
+            }
+        }
+    }
+    .promo-7{
+        position: relative; 
+        .promo__text-5{
+            position: absolute;
+            top: 0 ;
+            padding-top: 25px;
+            span{
+                @include font(12px, 700, 20px);
+                color:#FFFFFF ; 
+                margin: 25px 69px  25px 25px;
+                svg{
+                    padding-right: 15px;
+                }
+            }
+            h4{
+                @include font(24px, 600, 30px);
+                color:#FFFFFF ;
+                margin: 25px 84px  25px 25px;
+            }
+        }
+    }
+    .promo-8{
+        position: relative; 
+        .promo__text-6{
+            position: absolute;
+            top: 0 ;
+            padding-top: 25px;
+            span{
+                @include font(12px, 700, 20px);
+                color:#FFFFFF ; 
+                margin: 25px 69px  25px 25px;
+                svg{
+                    padding-right: 15px;
+                }
+            }
+            h4{
+                @include font(24px, 600, 30px);
+                color:#FFFFFF ;
+                margin: 25px 84px  25px 25px;
+            }
+        }
+    }
+    .promo-9{
+        position: relative; 
+        .promo__text-7{
+            position: absolute;
+            top: 0 ;
+            padding-top: 25px;
+            span{
+                @include font(12px, 700, 20px);
+                color:#FFFFFF ; 
+                margin: 25px 69px  25px 25px;
+                svg{
+                    padding-right: 15px;
+                }
+            }
+            h4{
+                @include font(24px, 600, 30px);
+                color:#FFFFFF ;
+                margin: 25px 84px  25px 25px;
+            }
+        }
     }
 }
