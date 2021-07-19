@@ -1,0 +1,83 @@
+.booking{
+    &__title{
+        margin-bottom: 65px;
+    }
+    &__description{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    &__filter__block{
+        max-width: 230px;
+        &-item{
+            background: #FFFFFF;
+            border: 2px solid #F5F6F7;
+            min-height: 94px;
+            & span{
+                display: inline-block;
+                width: 120px;
+                height: 20px;
+                margin: 20px 0 10px 20px;
+                @include font (12px, 900, 20px);
+                color: #6B7A99;
+            }
+            & span.last{
+                margin: 0 0 20px 20px;
+            }
+            &.tour-search{
+                display: flex;
+                border-radius: 10px 0px 0px 0px;
+                justify-content: center;
+                align-items: center;
+                @include font(14px, 800, 30px);
+                color: #4D5E80;
+            }
+            &.apply{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include font(14px, 900, 30px);
+                color: #3361FF;
+                cursor: pointer;
+            }
+            & svg{
+                margin: -20px 0 20px 40px;
+            }
+        }
+    }
+    &__filter__settings{
+        max-width: 230px;
+        background-color: #fff;
+        border: 2px solid #F5F6F7;
+        min-height: 100px;
+        & span{
+            display: inline-block;
+            margin: 15px 0 10px 20px;
+            @include font (12px, 900, 20px);
+            color: #6B7A99;
+        }
+    }
+        
+    &__load-more{
+        padding: 42px 0 42px;
+        margin-bottom: 130px;
+        text-align: center;
+        background-color: #fff;
+        border: 2px solid #F5F6F7;
+        border-radius: 0px 0px 10px 10px;
+        @include font(13px, 800, 25px);
+        color: #7D8FB3;
+        cursor: pointer;
+    }
+}
+
+.booking__filter__settings-value{
+    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    @include font (12px, 900, 20px);
+    color: #6B7A99;
+    & span{
+        margin: 12px 20px 15px;
+    }
+}

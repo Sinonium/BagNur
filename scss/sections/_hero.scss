@@ -22,7 +22,7 @@
     &__socials{
         position: absolute;
         left: -19%;
-        top: 43%;
+        top: 34%;
         & ul li{
             cursor: pointer;
             margin-bottom: 37px;
@@ -90,7 +90,7 @@
         &-dest{
             position: absolute;
             right: -30%;
-            top: 57%;      
+            top: 45%;      
             transform: rotate(-90deg);
             & span{
                 display: inline-block;
@@ -108,13 +108,28 @@
             .next{
                 position: absolute;
                 right: -19.5%;
-                top: 31%
+                top: 25%
             }
             .prev{
                 position: absolute;
                 right: -19.5%;
-                bottom: 2%;
+                bottom: 23%;
             }
+        }
+    }
+    &__scroll-btn{
+        margin-top: 155px;
+        & button{
+            @include font(14px, 800, 30px);
+            text-align: center;
+            color: #7D8FB3; 
+            padding: 10px 25px;
+            background: #FFFFFF;
+            border:none;
+            box-shadow: 0px 10px 30px rgba(54, 61, 77, 0.05);
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
         }
     }
 }
