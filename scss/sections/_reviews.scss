@@ -3,20 +3,87 @@
     background-position:top;
     text-align: center;
     &__text{
-        max-width: 750px;
+        position: relative;
+        min-width: 760px;
         min-height: 220px;
         padding-top: 30px;
         margin: 0 auto;
     }
+     &__prev{
+        position: absolute;
+        margin-top: 30px;
+        left: 0;
+        top: 0;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    &__prev svg path{
+        transition: 0.3s;
+    }
+    &__prev:hover svg path{
+        fill: black;
+    }
+    &__next{
+        position: absolute;
+        margin-top: 30px;
+        right: 0;
+        top: 0;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    &__next svg path{
+        transition: 0.3s;
+    }
+    &__next:hover svg path{
+        fill: black;
+    }
+}
     .reviews__insta{
-        position: relative;
-      img{
+        display: grid;
+        grid-template-columns: 245px 245px 245px 245px;
+        grid-auto-rows: 245px;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+        margin-bottom: 100px;
+        img{
           max-width: 245px;
           max-height: 245px;
           margin: 13px;
-      }
-      
-    }
+          }
+        }
+        .reviews-item__insta{
+            position: relative;
+            .caption{
+                position: absolute;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                z-index: 2;
+                left: 5%;
+                top: 5%;
+                background: rgba(0, 0, 0, 0.5);
+                transition: all 0.7s;
+                opacity: 0;
+            }
+            .caption:hover {
+                opacity: 2;
+                visibility: visible;
+            }
+            .insta {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                top: 30%;
+            }
+        }
+
+.slick-track{
+    display: flex;
+}
+#reviews__slider{
+    overflow: hidden;
 }
 
   

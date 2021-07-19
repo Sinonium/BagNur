@@ -454,6 +454,8 @@ h2 span {
 }
 
 .promo__list .promo-1 {
+  background-color: rgba 0, 0, 0, 0.3;
+  position: relative;
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-row: 1;
@@ -461,10 +463,275 @@ h2 span {
   grid-row-end: 3;
 }
 
+.promo__list .promo-1 .promo__text {
+  position: absolute;
+  top: 0;
+  padding-top: 40px;
+  left: 5%;
+}
+
+.promo__list .promo-1 .promo__text span {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.promo__list .promo-1 .promo__text h4 {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 15px 47px 140px;
+}
+
+.promo__list .promo-1 .promo__text div {
+  margin-bottom: 36px;
+}
+
+.promo__list .promo-3 {
+  position: relative;
+}
+
+.promo__list .promo-3 .promo__text-1 {
+  position: absolute;
+  top: 0;
+  padding-top: 25px;
+}
+
+.promo__list .promo-3 .promo__text-1 span {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 25px 69px  25px 25px;
+}
+
+.promo__list .promo-3 .promo__text-1 span svg {
+  padding-right: 15px;
+}
+
+.promo__list .promo-3 .promo__text-1 h4 {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 25px 84px  25px 25px;
+}
+
 .promo__list .promo-4 {
   -ms-grid-column: 4;
       grid-column-start: 4;
   grid-column-end: 6;
+  position: relative;
+}
+
+.promo__list .promo-4 .promo__text-2 {
+  position: absolute;
+  top: 0;
+  padding-top: 25px;
+}
+
+.promo__list .promo-4 .promo__text-2 span {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 25px 69px  25px 25px;
+}
+
+.promo__list .promo-4 .promo__text-2 span svg {
+  padding-right: 15px;
+}
+
+.promo__list .promo-4 .promo__text-2 h4 {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 25px 84px  25px 25px;
+}
+
+.promo__list .promo-5 {
+  position: relative;
+}
+
+.promo__list .promo-5 .promo__text-3 {
+  position: absolute;
+  top: 0;
+  padding-top: 25px;
+}
+
+.promo__list .promo-5 .promo__text-3 span {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 25px 69px  25px 25px;
+}
+
+.promo__list .promo-5 .promo__text-3 span svg {
+  padding-right: 15px;
+}
+
+.promo__list .promo-5 .promo__text-3 h4 {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 25px 84px  25px 25px;
+}
+
+.promo__list .promo-6 {
+  position: relative;
+}
+
+.promo__list .promo-6 .promo__text-4 {
+  position: absolute;
+  top: 0;
+  padding-top: 25px;
+}
+
+.promo__list .promo-6 .promo__text-4 span {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 25px 69px  25px 25px;
+}
+
+.promo__list .promo-6 .promo__text-4 span svg {
+  padding-right: 15px;
+}
+
+.promo__list .promo-6 .promo__text-4 h4 {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 25px 84px  25px 25px;
+}
+
+.promo__list .promo-7 {
+  position: relative;
+}
+
+.promo__list .promo-7 .promo__text-5 {
+  position: absolute;
+  top: 0;
+  padding-top: 25px;
+}
+
+.promo__list .promo-7 .promo__text-5 span {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 25px 69px  25px 25px;
+}
+
+.promo__list .promo-7 .promo__text-5 span svg {
+  padding-right: 15px;
+}
+
+.promo__list .promo-7 .promo__text-5 h4 {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 25px 84px  25px 25px;
+}
+
+.promo__list .promo-8 {
+  position: relative;
+}
+
+.promo__list .promo-8 .promo__text-6 {
+  position: absolute;
+  top: 0;
+  padding-top: 25px;
+}
+
+.promo__list .promo-8 .promo__text-6 span {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 25px 69px  25px 25px;
+}
+
+.promo__list .promo-8 .promo__text-6 span svg {
+  padding-right: 15px;
+}
+
+.promo__list .promo-8 .promo__text-6 h4 {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 25px 84px  25px 25px;
+}
+
+.promo__list .promo-9 {
+  position: relative;
+}
+
+.promo__list .promo-9 .promo__text-7 {
+  position: absolute;
+  top: 0;
+  padding-top: 25px;
+}
+
+.promo__list .promo-9 .promo__text-7 span {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin: 25px 69px  25px 25px;
+}
+
+.promo__list .promo-9 .promo__text-7 span svg {
+  padding-right: 15px;
+}
+
+.promo__list .promo-9 .promo__text-7 h4 {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin: 25px 84px  25px 25px;
 }
 
 .reviews {
@@ -474,20 +741,164 @@ h2 span {
 }
 
 .reviews__text {
-  max-width: 750px;
+  position: relative;
+  min-width: 760px;
   min-height: 220px;
   padding-top: 30px;
   margin: 0 auto;
 }
 
-.reviews .reviews__insta {
-  position: relative;
+.reviews__prev {
+  position: absolute;
+  margin-top: 30px;
+  left: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
-.reviews .reviews__insta img {
+.reviews__prev svg path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.reviews__prev:hover svg path {
+  fill: black;
+}
+
+.reviews__next {
+  position: absolute;
+  margin-top: 30px;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.reviews__next svg path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.reviews__next:hover svg path {
+  fill: black;
+}
+
+.reviews__insta {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 245px 245px 245px 245px;
+      grid-template-columns: 245px 245px 245px 245px;
+  grid-auto-rows: 245px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 100px;
+}
+
+.reviews__insta img {
   max-width: 245px;
   max-height: 245px;
   margin: 13px;
+}
+
+.reviews-item__insta {
+  position: relative;
+}
+
+.reviews-item__insta .caption {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  left: 5%;
+  top: 5%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  opacity: 0;
+}
+
+.reviews-item__insta .caption:hover {
+  opacity: 2;
+  visibility: visible;
+}
+
+.reviews-item__insta .insta {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 30%;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#reviews__slider {
+  overflow: hidden;
+}
+
+footer {
+  background-color: #0D111A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .contacts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 270px  210px;
+      grid-template-columns: 270px  210px;
+  grid-auto-rows: 70px;
+  padding: 83px 125px 82px 183px;
+}
+
+footer .contacts .footer-item {
+  position: relative;
+}
+
+footer .contacts .footer-item svg {
+  position: absolute;
+  right: 110%;
+  padding-top: 5px;
+}
+
+footer .contacts .footer-item span {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.menu ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px  80px  80px 80px;
+      grid-template-columns: 80px  80px  80px 80px;
+  grid-auto-rows: 40px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 83px 125px 82px 183px;
+}
+
+.menu ul li {
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  color: #FFFFFF;
 }
 
 body {
