@@ -6,12 +6,13 @@ let budgetValues = [
 ];
 
 noUiSlider.create(budget, {
-    start: [260, 40000],
-    connect: true,  
+    start: [1000, 20000],
+    connect: true,
     range: {
-        'min': [260, 100],
-        'max': 90000
+        'min': [200, 200],
+        'max': 24000
     }
+    
 });
 budget.noUiSlider.on('update', function (values, handle) {
     budgetValues[handle].innerHTML = "$" + values[handle];
@@ -24,24 +25,14 @@ let perdayValues = [
 ];
 
 noUiSlider.create(perDay, {
-    start: [260, 800],
+    start: [200, 800],
     connect: true,
     range: {
-        'min': [260, 5],
-        'max': 1000
+        'min': [200, 10],
+        'max': 800
     }
 });
-perDay.noUiSlider.on('update', function (values, handle) {
-    perdayValues[handle].innerHTML = "$" + values[handle];
-    let minCost = perDay.noUiSlider.get()
-    let ss = parseInt(minCost[0])
-    budget.noUiSlider.updateOptions({
-        range: {
-            'min': ss,
-            'max': 90000
-        }
-    });     
-});
+
 
 let days = document.getElementById('days');
 let daysValues = [
@@ -50,14 +41,43 @@ let daysValues = [
 ];
 
 noUiSlider.create(days, {
-    start: [16, 60],
+    start: [5, 24],
     connect: true,
     range: {
         'min': [1,1],
-        'max': 90
+        'max': 30
     }
-});
-days.noUiSlider.on('update', function (values, handle) {
-    daysValues[handle].innerHTML = values[handle];
+    
 });
 
+days.noUiSlider.on('update', function (values, handle) {
+    daysValues[handle].innerHTML = values[handle];
+    let minCost = perDay.noUiSlider.get()
+    let day = days.noUiSlider.get()
+    let minD = parseInt(day[0])
+    let minC = parseInt(minCost[0])
+    let maxD = parseInt(day[1])
+    let maxC = parseInt(minCost[1])
+    budget.noUiSlider.updateOptions({
+        range: {
+            'min': [minD * minC, minC],
+            'max': maxC * maxD
+        }
+    });     
+});
+
+perDay.noUiSlider.on('update', function (values, handle) {
+    perdayValues[handle].innerHTML = "$" + values[handle];
+    let minCost = perDay.noUiSlider.get()
+    let day = days.noUiSlider.get()
+    let minD = parseInt(day[0])
+    let minC = parseInt(minCost[0])
+    let maxD = parseInt(day[1])
+    let maxC = parseInt(minCost[1])
+    budget.noUiSlider.updateOptions({
+        range: {
+            'min': [minD * minC, minC],
+            'max': maxC * maxD
+        }
+    });     
+});

@@ -40,3 +40,10 @@ ul{
 li{
    list-style: none;
 }
+
+@media screen and(max-width:1111px) {
+    .container{
+        margin: 0;
+        width: 100%;
+    }
+}
