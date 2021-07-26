@@ -44,11 +44,13 @@
 
 .label span {
   font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-weight: bold;
-  font-size: 12px;
   color: #fff;
 }
 
@@ -200,8 +202,8 @@ h2 span {
 .hero {
   background: url("../images/background.png") no-repeat;
   background-size: cover;
+  width: 100%;
   background-position: center -20vh;
-  height: 100vh;
 }
 
 .hero__content {
@@ -978,6 +980,19 @@ h2 span {
 
 .booking__block__data-item-img img {
   max-width: 160px;
+}
+
+#budget-slider,
+#perDay,
+#days {
+  max-width: 93%;
+}
+
+#budget-slider:hover,
+#perDay:hover,
+#days:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 @media screen and (max-width: 1110px) {
