@@ -136,6 +136,14 @@
         max-width: 160px;
     }
 }
+#budget-slider,
+#perDay,
+#days{
+    max-width: 93%;
+    &:hover{
+        cursor: grab;
+    }
+}
 
 @media screen and(max-width:1110px) {
     .booking__block__data-item{
