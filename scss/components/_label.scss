@@ -7,7 +7,7 @@ height: 30px;
 background-color:#FF6633;
 border-radius: 30px;
 span{
-    @include font (12px, 800, 20px);
+    @include font(12px, 900, 20px);
     align-self: center;
     color: #fff;
     }

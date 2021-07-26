@@ -35,10 +35,8 @@
         }
     }
     &__logo{
-        font-family: 'San Francisco Pro';
-        font-weight: Bold;
+        @include font(20px, 900, normal);
         color: white;
-        font-size: 20px;
         max-width: 110px;
         margin-left: 41px;
     }
@@ -53,10 +51,7 @@
             }
         }
         &-text{
-            font-family: 'San Francisco Pro';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 14px;
+            @include font(14px, 600, 20px);
             color: #FFFFFF;
             opacity: 0.5;
             &:hover{
@@ -70,20 +65,14 @@
             display: flex;
             & li{
                 margin-right: 35px;
-                font-family: 'San Francisco Pro';
-                font-style: normal;
-                font-weight: bold;
-                font-size: 13px;
+                @include font (13px, 900, 20px);
                 color: #FFFFFF;
             }
         }
     }
     &__get-in-touch{
         margin-left: auto;
-        font-family: 'San Francisco Pro';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
+       @include font (14px, 400, 20px);
         color: #FFFFFF;
         max-width: 80px;
     }

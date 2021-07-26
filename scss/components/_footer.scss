@@ -31,6 +31,12 @@ footer{
         li{
             @include font(13px, 700, 25px);
             color: #FFFFFF;
+            transition: 0.3s;
+            cursor: pointer;
         }
+        li:hover{
+            color: #7D8FB3;
+        }
+        
    }
 }
