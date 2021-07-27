@@ -1,12 +1,15 @@
 .services{
-    background: url('../images/TRAVEL.png') center no-repeat;
-    background-position:top;
     text-align: center;
-    margin: 95px;
     &__text{
+        background: url('../images/TRAVEL.png') center no-repeat;
+        background-position:top;
+        text-align: center;
         max-width: 750px;
         min-height: 220px;
-        margin: 0 auto;
+        margin: 6px auto 0;
+        & h2{
+            padding-top: 55px
+        }
     }
     &__description{
         padding: 65px 50px 0;
