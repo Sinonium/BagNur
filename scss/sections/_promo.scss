@@ -1,17 +1,19 @@
 .promo{
-    position: relative;
-    background: url('../images/TOURS.png') center no-repeat;
-    background-position:top;
     text-align: center;
     margin: 95px;
     &__text{
+        background: url('../images/TOURS.png') center no-repeat;
+        background-position:top;
         max-width: 750px;
         min-height: 220px;
-        padding-top: 30px;
-        margin: 0 auto;
+        // padding-top: 30px;
+        margin: 6px auto 0;
+        & h2{
+            padding-top: 55px;
+        }
     }
     &__description{
-        padding: 35px 50px 0;
+        padding: 30px 50px 60px;
     }
 }
 .promo__list{

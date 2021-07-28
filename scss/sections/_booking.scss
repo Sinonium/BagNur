@@ -1,8 +1,12 @@
-.booking{
-    background: url(../images/TRAVEL.png) center no-repeat;
-    background-position:top;
+.booking{    
     &__title{
-        margin-bottom: 65px;
+        margin: 6px;
+        min-height: 175px;
+        background: url(../images/TRAVEL.png) center no-repeat;
+        background-position:top;
+        & h2{
+            padding-top: 55px;
+        }
     }
     &__description{
         display: flex;
@@ -136,9 +140,17 @@
         max-width: 160px;
     }
 }
+#budget-slider,
+#perDay,
+#days{
+    max-width: 93%;
+    &:hover{
+        cursor: grab;
+    }
+}
 
 @media screen and(max-width:1110px) {
     .booking__block__data-item{
-        max-width: calc(100vw / 2 - 99px);
+        max-width: calc(100vw / 2 - 127px);
     }
 }

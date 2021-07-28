@@ -40,18 +40,28 @@
   height: 30px;
   background-color: #FF6633;
   border-radius: 30px;
+  color: #fff;
+}
+
+.label_pink {
+  background: rgba(230, 46, 123, 0.1);
+  color: #E62E7B;
 }
 
 .label span {
   font-family: 'San Francisco Pro';
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   font-size: 12px;
   line-height: 20px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #fff;
+}
+
+.label_orange {
+  background-color: rgba(255, 102, 51, 0.1);
+  color: #FF6633;
 }
 
 h2 {
@@ -98,7 +108,7 @@ h2 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 74px;
+  padding-top: 63px;
 }
 
 .header__burger-btn {
@@ -204,11 +214,32 @@ h2 span {
   max-width: 80px;
 }
 
+@media screen and (max-width: 1003px) {
+  .header__search svg {
+    margin: 0 20px 0 70px;
+  }
+}
+
+@media screen and (max-width: 931px) {
+  .header__search svg {
+    margin: 0 20px 0 70px;
+  }
+  .header__navigation {
+    margin-left: 90px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__navigation {
+    display: none;
+  }
+}
+
 .hero {
   background: url("../images/background.png") no-repeat;
   background-size: cover;
-  background-position: center -22vh;
-  height: 100vh;
+  height: 110vh;
+  background-position: center -20vh;
 }
 
 .hero__content {
@@ -236,8 +267,8 @@ h2 span {
 
 .hero__socials {
   position: absolute;
-  left: -19%;
-  top: 34%;
+  left: -9.5em;
+  top: 20em;
 }
 
 .hero__socials ul li {
@@ -337,8 +368,8 @@ h2 span {
 
 .hero__slider__items-dest {
   position: absolute;
-  right: -30%;
-  top: 45%;
+  right: -15em;
+  top: 27em;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
@@ -377,7 +408,7 @@ h2 span {
 }
 
 .hero__scroll-btn {
-  margin-top: 155px;
+  margin-top: 12vh;
 }
 
 .hero__scroll-btn button {
@@ -398,17 +429,66 @@ h2 span {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1367px) {
+  .hero__content {
+    padding-top: 167px;
+    max-width: 600px;
+  }
+  .hero__title {
+    margin-top: 46px;
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .hero__form {
+    margin-top: 42px;
+  }
+  .hero__form ul li {
+    padding: 10px 7px;
+  }
+  .hero__info {
+    margin-top: 57px;
+  }
+  .hero__info span {
+    font-size: 12px;
+    margin-left: 12px;
+    max-width: 120px;
+  }
+  .hero__info div {
+    margin-right: 40px;
+  }
+  .hero__socials {
+    top: 14em;
+    left: -18.5vw;
+  }
+  .hero__slider__items-dest {
+    top: 42vh;
+    right: -25vw;
+  }
+  .hero__slider__items-arrows .next {
+    top: 22vh;
+    right: -18.7vw;
+  }
+  .hero__slider__items-arrows .prev {
+    right: -18.7vw;
+    bottom: 22vh;
+  }
+}
+
 .services {
-  background: url("../images/TRAVEL.png") center no-repeat;
-  background-position: top;
   text-align: center;
-  margin: 95px;
 }
 
 .services__text {
+  background: url("../images/TRAVEL.png") center no-repeat;
+  background-position: top;
+  text-align: center;
   max-width: 750px;
   min-height: 220px;
-  margin: 0 auto;
+  margin: 6px auto 0;
+}
+
+.services__text h2 {
+  padding-top: 55px;
 }
 
 .services__description {
@@ -460,22 +540,24 @@ h2 span {
 }
 
 .promo {
-  position: relative;
-  background: url("../images/TOURS.png") center no-repeat;
-  background-position: top;
   text-align: center;
   margin: 95px;
 }
 
 .promo__text {
+  background: url("../images/TOURS.png") center no-repeat;
+  background-position: top;
   max-width: 750px;
   min-height: 220px;
-  padding-top: 30px;
-  margin: 0 auto;
+  margin: 6px auto 0;
+}
+
+.promo__text h2 {
+  padding-top: 55px;
 }
 
 .promo__description {
-  padding: 35px 50px 0;
+  padding: 30px 50px 60px;
 }
 
 .promo__list {
@@ -909,13 +991,15 @@ h2 span {
   cursor: pointer;
 }
 
-.booking {
+.booking__title {
+  margin: 6px;
+  min-height: 175px;
   background: url(../images/TRAVEL.png) center no-repeat;
   background-position: top;
 }
 
-.booking__title {
-  margin-bottom: 65px;
+.booking__title h2 {
+  padding-top: 55px;
 }
 
 .booking__description {
@@ -1130,24 +1214,37 @@ h2 span {
   max-width: 160px;
 }
 
+#budget-slider,
+#perDay,
+#days {
+  max-width: 93%;
+}
+
+#budget-slider:hover,
+#perDay:hover,
+#days:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
 @media screen and (max-width: 1110px) {
   .booking__block__data-item {
-    max-width: calc(100vw / 2 - 99px);
+    max-width: calc(100vw / 2 - 127px);
   }
 }
 
-.reviews {
+.reviews__text {
   background: url(../images/INSTA.png) center no-repeat;
   background-position: top;
-  text-align: center;
-}
-
-.reviews__text {
   position: relative;
   min-width: 760px;
   min-height: 220px;
   padding-top: 30px;
-  margin: 0 auto;
+  margin: 6px auto 0;
+}
+
+.reviews__text h2 {
+  padding-top: 30px;
 }
 
 .reviews__prev {
@@ -1327,12 +1424,18 @@ h2 span {
 
 .footer__block-menu ul li {
   cursor: pointer;
+
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
+
 .footer__block-menu ul li:hover {
   color: #4D5E80;
+=======
+.menu ul li:hover {
+  color: #7D8FB3;
+
 }
 
 html {
@@ -1368,8 +1471,8 @@ li {
 
 @media screen and (max-width: 1111px) {
   .container {
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 95%;
   }
 }
 /*# sourceMappingURL=index.css.map */
