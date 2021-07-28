@@ -6,9 +6,18 @@ width: 80px;
 height: 30px;
 background-color:#FF6633;
 border-radius: 30px;
-span{
-    @include font(12px, 900, 20px);
-    align-self: center;
-    color: #fff;
+color: #fff;
+&_pink{
+    background:rgba(230, 46, 123, 0.1);
+    color: #E62E7B;
     }
+& span{
+    @include font(12px, 800, 20px);
+    align-self: center;
+    }
+&_orange{
+    background-color: rgba(255, 102, 51, 0.1);
+    color: #FF6633;
 }
+}
+
