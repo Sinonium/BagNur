@@ -4,63 +4,63 @@
     "name":"Europe Escape, 16 Days",
     "destination":"England, France, Other",
     "ageRange": "10 to 90 year olds",
-    "price": "340",
-    "days" : "16",
-    "startsEnds": "London / London",
+    "price": "2000",
+    "days" : "7",
+    "startsEnds": "Italy / London",
     "img": "./images/booking-1.png"
 },
 {
     "name":"Bali Trip, 16 Days",
     "destination":"England, France, Other",
     "ageRange": "10 to 90 year olds",
-    "price": "340",
-    "days" : "16",
-    "startsEnds": "London / London",
+    "price": "2500",
+    "days" : "10",
+    "startsEnds": "Bali/ Thailand",
     "img": "./images/booking-2.png"
 },
 {
     "name":"Japan History, 16 Days",
     "destination":"England, France, Other",
     "ageRange": "10 to 90 year olds",
-    "price": "340",
-    "days" : "16",
-    "startsEnds": "London / London",
+    "price": "3800",
+    "days" : "14",
+    "startsEnds": "Tokyo/ Kyoto",
     "img": "./images/booking-3.png"
 },
 {
     "name":"Europe Escape, 16 Days",
     "destination":"England, France, Other",
     "ageRange": "10 to 90 year olds",
-    "price": "340",
+    "price": "1900",
     "days" : "16",
-    "startsEnds": "London / London",
+    "startsEnds": "Berlin / London",
     "img": "./images/booking-4.png"
 },
 {
     "name":"Great London, 16 Days",
     "destination":"England, France, Other",
     "ageRange": "10 to 90 year olds",
-    "price": "340",
-    "days" : "16",
-    "startsEnds": "London / London",
+    "price": "1000",
+    "days" : "10",
+    "startsEnds": "London / Oxford",
     "img": "./images/booking-5.png"
 },
 {
     "name":"Turkey All inclusive, 16 Days",
     "destination":"England, France, Other",
     "ageRange": "10 to 90 year olds",
-    "price": "340",
-    "days" : "16",
-    "startsEnds": "London / London",
+    "price": "700",
+    "days" : "14",
+    "startsEnds": "Cappadocia/ Stambul",
     "img": "./images/booking-6.png"
 },
 {
     "name":"China Business, 16 Days",
     "destination":"England, France, Other",
     "ageRange": "10 to 90 year olds",
-    "price": "340",
+    "price": "1200",
     "days" : "16",
-    "startsEnds": "London / London",
+    "startsEnds": "Shanghai / Beijing",
     "img": "./images/booking-7.png"
 
 },
@@ -68,27 +68,27 @@
     "name":"Sweden, 16 Days",
     "destination":"England, France, Other",
     "ageRange": "10 to 90 year olds",
-    "price": "340",
-    "days" : "16",
-    "startsEnds": "London / London",
+    "price": "800",
+    "days" : "7",
+    "startsEnds": "Stockholm / Boo",
     "img": "./images/booking-8.png"
 },
 {
     "name":"Norway Escape, 16 Days",
     "destination":"England, France, Other",
     "ageRange": "10 to 90 year olds",
-    "price": "340",
+    "price": "1300",
     "days" : "16",
-    "startsEnds": "London / London",
+    "startsEnds": "Oslo/ Berjen",
     "img": "./images/booking-9.png"
 },
 {
     "name":"Norway, 16 Days",
     "destination":"England, France, Other",
     "ageRange": "10 to 90 year olds",
-    "price": "340",
-    "days" : "16",
-    "startsEnds": "London / London",
+    "price": "600",
+    "days" : "7",
+    "startsEnds": "Oslo / Kirkenes",
     "img": "./images/booking-10.png"
 }
 

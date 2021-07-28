@@ -1,42 +1,56 @@
-footer{
-    background-color: #0D111A ;
-    display: flex;
-    .contacts{
-        display: grid;
-        grid-template-columns: 270px  210px ;
-        grid-auto-rows: 70px;
-        padding: 83px 125px 82px 183px;
+.footer{
+    background-color: #000;
+    &__block{
+        display: flex;
+        position: relative;
+        .footer-btn{
+            position: absolute;
+            top: 30%;
+            right: 3%;
+            cursor: pointer;
+           
+        }
+        .footer-btn svg:hover path{
+            fill:#4D5E80;
+             transition: 0.3s;
+        }
+        &-contacts{
+            display: grid;
+            grid-template-columns: 200px 200px  ;
+            grid-template-rows: 25px;
+            grid-column-gap: 83px;
+            grid-row-gap: 25px; 
+            @include font (13px, 800, 25px,);
+            color: #FFFFFF;
+            opacity: 0.6; 
+            margin: 93px 0 0 50px ;
+        }
         .footer-item{
             position: relative;
-            svg{
+            .footer-item__icon{
                 position: absolute;
-                right: 110%;
-                padding-top: 5px;
+                left: -22%;
+                margin-top: 5px;
             }
-            span{
-                @include font(13px, 700, 25px);
-                color: #FFFFFF;
+        }
+        &-menu{
+            margin: 80px 0 165px 100px;
+            & ul{
+            display: grid;
+            grid-template-columns: 60px 60px 60px 60px ;
+            grid-template-rows: 25px;
+            grid-column-gap: 43px;
+            grid-row-gap: 25px; 
+            @include font(13px, 800, 25px);
+            color: #FFFFFF;
+            & li{
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            & li:hover{
+                color: #4D5E80;
+            }
             }
         }
     }
-}
-.menu{
-   ul{
-       display: grid;
-       grid-template-columns: 80px  80px  80px 80px;
-       grid-auto-rows: 40px;
-       grid-column-gap: 10px;
-       grid-row-gap: 10px;
-       padding: 83px 125px 82px 183px;
-        li{
-            @include font(13px, 700, 25px);
-            color: #FFFFFF;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-        li:hover{
-            color: #7D8FB3;
-        }
-        
-   }
 }
