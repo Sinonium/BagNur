@@ -1348,66 +1348,94 @@ h2 span {
   overflow: hidden;
 }
 
-footer {
-  background-color: #0D111A;
+.footer {
+  background-color: #000;
+}
+
+.footer__block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-footer .contacts {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 270px  210px;
-      grid-template-columns: 270px  210px;
-  grid-auto-rows: 70px;
-  padding: 83px 125px 82px 183px;
-}
-
-footer .contacts .footer-item {
   position: relative;
 }
 
-footer .contacts .footer-item svg {
+.footer__block .footer-btn {
   position: absolute;
-  right: 110%;
-  padding-top: 5px;
-}
-
-footer .contacts .footer-item span {
-  font-family: 'San Francisco Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 25px;
-  color: #FFFFFF;
-}
-
-.menu ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 80px  80px  80px 80px;
-      grid-template-columns: 80px  80px  80px 80px;
-  grid-auto-rows: 40px;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  padding: 83px 125px 82px 183px;
-}
-
-.menu ul li {
-  font-family: 'San Francisco Pro';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 25px;
-  color: #FFFFFF;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  top: 30%;
+  right: 3%;
   cursor: pointer;
 }
 
+.footer__block .footer-btn svg:hover path {
+  fill: #4D5E80;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__block-contacts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+  -ms-grid-rows: 25px;
+      grid-template-rows: 25px;
+  grid-column-gap: 83px;
+  grid-row-gap: 25px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 25px;
+  color: #FFFFFF;
+  opacity: 0.6;
+  margin: 93px 0 0 50px;
+}
+
+.footer__block .footer-item {
+  position: relative;
+}
+
+.footer__block .footer-item .footer-item__icon {
+  position: absolute;
+  left: -22%;
+  margin-top: 5px;
+}
+
+.footer__block-menu {
+  margin: 80px 0 165px 100px;
+}
+
+.footer__block-menu ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60px 60px 60px 60px;
+      grid-template-columns: 60px 60px 60px 60px;
+  -ms-grid-rows: 25px;
+      grid-template-rows: 25px;
+  grid-column-gap: 43px;
+  grid-row-gap: 25px;
+  font-family: 'San Francisco Pro';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.footer__block-menu ul li {
+  cursor: pointer;
+
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+.footer__block-menu ul li:hover {
+  color: #4D5E80;
+=======
 .menu ul li:hover {
   color: #7D8FB3;
+
 }
 
 html {
