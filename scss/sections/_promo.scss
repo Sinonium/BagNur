@@ -1,12 +1,12 @@
 .promo{
     text-align: center;
-    margin: 95px;
+    margin: 95px 0;
     &__text{
         background: url('../images/TOURS.png') center no-repeat;
-        background-position:top;
+        background-position: top;
+        background-size: 100%;
         max-width: 750px;
         min-height: 220px;
-        // padding-top: 30px;
         margin: 6px auto 0;
         & h2{
             padding-top: 55px;
@@ -47,11 +47,11 @@
             }
             span{
                 @include font(12px, 700, 20px);
-                color:#FFFFFF ; 
+                color:$text-white;
             }
             h4{
                 @include font(24px, 600, 30px);
-                color:#FFFFFF ;
+                color:$text-white;
                 margin: 15px 47px 140px;
             }
             div{
@@ -81,7 +81,7 @@
             }
             span{
                 @include font(12px, 700, 20px);
-                color:#FFFFFF ; 
+                color:$text-white;
                 margin: 25px 69px  25px 25px;
                 svg{
                     padding-right: 15px;
@@ -90,7 +90,7 @@
             }
             h4{
                 @include font(24px, 600, 30px);
-                color:#FFFFFF ;
+                color:$text-white;
                 margin: 25px 84px  25px 25px;
             }
         }
@@ -119,7 +119,7 @@
             }
             span{
                 @include font(12px, 700, 20px);
-                color:#FFFFFF ; 
+                color:$text-white;
                 margin: 25px 69px  25px 25px;
                 svg{
                     margin: -5px 0 -6px 0;
@@ -128,7 +128,7 @@
             }
             h4{
                 @include font(24px, 600, 30px);
-                color:#FFFFFF ;
+                color:$text-white;
                 margin: 25px 84px  25px 25px;
             }
         }
@@ -156,7 +156,7 @@
             }
             span{
                 @include font(12px, 500, 20px);
-                color:#FFFFFF ; 
+                color:$text-white;
                 margin: 25px 69px  25px 25px;
                 text-align: center;
                 svg{
@@ -166,7 +166,7 @@
             }
             h4{
                 @include font(24px, 600, 30px);
-                color:#FFFFFF ;
+                color:$text-white;
                 margin: 25px 84px  25px 25px;
             }
         }
@@ -193,7 +193,7 @@
             }
             span{
                 @include font(12px, 700, 20px);
-                color:#FFFFFF ; 
+                color:$text-white;
                 margin: 25px 69px  25px 25px;
                 svg{
                     padding-right: 15px;
@@ -202,7 +202,7 @@
             }
             h4{
                 @include font(24px, 600, 30px);
-                color:#FFFFFF ;
+                color:$text-white;
                 margin: 25px 84px  25px 25px;
             }
         }
@@ -229,7 +229,7 @@
             padding-top: 25px;
             span{
                 @include font(12px, 700, 20px);
-                color:#FFFFFF ; 
+                color:$text-white;
                 margin: 25px 69px  25px 25px;
                 svg{
                     padding-right: 15px;
@@ -238,7 +238,7 @@
             }
             h4{
                 @include font(24px, 600, 30px);
-                color:#FFFFFF ;
+                color:$text-white;
                 margin: 25px 84px  25px 25px;
             }
         }
@@ -265,7 +265,7 @@
             }
             span{
                 @include font(12px, 700, 20px);
-                color:#FFFFFF ; 
+                color:$text-white;
                 margin: 25px 69px  25px 25px;
                 svg{
                     padding-right: 15px;
@@ -274,7 +274,7 @@
             }
             h4{
                 @include font(24px, 600, 30px);
-                color:#FFFFFF ;
+                color:$text-white;
                 margin: 25px 84px  25px 25px;
             }
         }
@@ -301,7 +301,7 @@
             }
             span{
                 @include font(12px, 700, 20px);
-                color:#FFFFFF ; 
+                color:$text-white;
                 margin: 25px 69px  25px 25px;
                 svg{
                     padding-right: 15px;
@@ -310,13 +310,96 @@
             }
             h4{
                 @include font(24px, 600, 30px);
-                color:#FFFFFF ;
+                color:$text-white;
                 margin: 25px 84px  25px 25px;
             }
         }
         & .button{
             margin: -16px -140px 0px 330px;
             cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .promo__list{
+        transform: scale(0.8);
+        margin-left: -70px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .promo__list{
+        margin-left: 80px;
+        transform: scale(1);
+        grid-template-columns: 190px 190px 190px;
+        grid-auto-rows: 175px;
+        .promo-1{
+            border-radius: 10px 0px 0px 0px;
+            & img{
+                border-radius: 10px 0px 0px 0px;
+            }
+        }
+        .promo-3{
+            border-radius: 0px 10px 0px 0px ;
+            & img{
+                border-radius: 0px 10px 0px 0px ;
+            }
+        }
+        .promo-4{
+            grid-column-end: 2;
+        }
+        .promo-5{
+            border-radius: 0;
+        }
+        .promo-8{
+            border-radius:  0px 0px 0px 10px;
+           & img{
+            border-radius:  0px 0px 0px 10px;
+           }
+        }
+        .promo-9{
+            border-radius: 0px 0px 10px 0px ;
+        }
+    }
+}
+@media screen and (max-width:426px) {
+    .promo__list{
+        transform: scale(1.1);
+        margin-left: 8px;
+        grid-template-columns: 190px 190px;
+        grid-auto-rows: 175px;
+        .promo-2{
+            & img{
+                border-radius: 0 10px 0 0;
+            }
+        }
+        .promo-3{
+            grid-column-end: 3;
+            border-radius:0 ;
+            & img{
+                border-radius:0 ;
+            }
+        }
+        .promo-4{
+            max-width: 380px;
+            grid-column-end: 1;
+        }
+        .promo-7{
+            grid-column-end: 2;
+        }
+        .promo-8{
+            border-radius:0 ;
+            & img{
+                border-radius:0 ;
+            }
+        }
+        .promo-9{
+            grid-column-end: 2;
+            border-radius:0px 0px 10px 10px  ;
+            & img{
+                border-radius:0px 0px 0px 10px ;
+            }
         }
     }
 }

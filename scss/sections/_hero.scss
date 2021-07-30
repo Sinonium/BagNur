@@ -118,11 +118,11 @@
         }
     }
     &__scroll-btn{
-        margin-top: 12vh;
+        margin-top: 10.5vh;
         & button{
             @include font(14px, 800, 30px);
             text-align: center;
-            color: #7D8FB3; 
+            color: $text-greyBlue70; 
             padding: 10px 25px;
             background: #FFFFFF;
             border:none;
