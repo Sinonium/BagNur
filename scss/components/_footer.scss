@@ -1,5 +1,5 @@
 .footer{
-    background-color: #000;
+    background-color: $bg-black;
     &__block{
         display: flex;
         position: relative;
@@ -11,7 +11,7 @@
            
         }
         .footer-btn svg:hover path{
-            fill:#4D5E80;
+            fill:$text-greyBlue50;
              transition: 0.3s;
         }
         &-contacts{
@@ -21,9 +21,9 @@
             grid-column-gap: 83px;
             grid-row-gap: 25px; 
             @include font (13px, 800, 25px,);
-            color: #FFFFFF;
+            color: $text-white;
             opacity: 0.6; 
-            margin: 93px 0 0 50px ;
+            margin: 52px 0 0 50px ;
         }
         .footer-item{
             position: relative;
@@ -34,7 +34,7 @@
             }
         }
         &-menu{
-            margin: 80px 0 165px 100px;
+            margin: 40px 0 80px 100px;
             & ul{
             display: grid;
             grid-template-columns: 60px 60px 60px 60px ;
@@ -48,9 +48,26 @@
                 transition: 0.3s;
             }
             & li:hover{
-                color: #4D5E80;
+                color: $text-greyBlue50;
             }
             }
+        }
+    }
+}
+@media screen and (max-width:1025px) {
+    .footer__block{
+        transform: scale(0.9);
+        .footer-btn{
+            display: none;
+        }
+
+    }
+}
+@media screen and (max-width:769px) {
+    .footer__block{
+        display: inline-block;
+        &-menu{
+            margin: 40px 0 80px 0;
         }
     }
 }

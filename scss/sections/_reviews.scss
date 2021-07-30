@@ -2,6 +2,7 @@
     &__text{
         background: url(../images/INSTA.png) center no-repeat;
         background-position:top;
+        background-size: 80%;
         position: relative;
         min-width: 760px;
         min-height: 220px;
@@ -68,21 +69,24 @@
                 
             }
             .caption:hover {
-                opacity: 2;
-                visibility: visible;
+                opacity: 1;    
             }
             .insta {
                 width: 100%;
                 height: 100%;
                 position: absolute;
                 z-index: 1;
-                left: 0;
-                top: 30%;
+                left: 1%;
+                top: 1%;
                 cursor: pointer;
+                text-align: center;
+                svg{
+                    margin-top: 80px;
+                }
                
             }
             .insta svg:hover path {
-                fill:#000000;
+                fill:$bg-black;
             }
         }
 
@@ -93,4 +97,16 @@
     overflow: hidden;
 }
 
+@media screen and (max-width:1025px) {
+    .reviews__insta{
+        transform: scale(0.86);
+        margin-left: -15px;
+    }
+}
+@media screen and (max-width:769px) {
+    .reviews__insta{
+        transform: scale(0.7);
+        margin-left: 10px;
+    }
+}
   

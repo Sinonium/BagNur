@@ -1,8 +1,10 @@
 .services{
+    margin-top: 90px;
     text-align: center;
     &__text{
         background: url('../images/TRAVEL.png') center no-repeat;
         background-position:top;
+        background-size: 100%;
         text-align: center;
         max-width: 750px;
         min-height: 220px;
@@ -19,11 +21,10 @@
         align-items: center;
         justify-content: space-between;
         margin-top: 70px;
-       
-        div{
+        &-column{
             max-width: 160px;
             min-height: 255px;
-            background-color: #FFFFFF;
+            background-color: $text-white;
             box-shadow: 0px 2px 5px rgba(54, 61, 77, 0.05);
             border-radius: 10px;
             transition: 0.5s;
@@ -37,11 +38,74 @@
             span{
                 margin-bottom: 50px;
                 @include font (12px, 800, 20px);
-                color:#6B7A99 ;
+                color:$text-greyBlue60 ;
             }
         }
     }
 }
 
+@media screen and (max-width:1025px) {
+    .services__list-column{
+        max-width: 130px;
+        min-height: 235px;
+        svg{
+            margin: 40px 30px 50px;
+        }
+    }
+}
 
+@media screen and (max-width: 769px) {
+    .services__list{
+        flex-wrap: wrap;
+        &-column{
+            max-width: 180px;
+            min-height: 285px;
+            margin: 40px 31px 0 31px;
+            svg{
+                margin: 50px 50px 67px;
+            }
+            span{
+                display: inline-block;
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 426px){
+    .services__list{
+        &-column{
+            max-width: 160px;
+            min-height: 255px;
+            margin: 25px 15px 0 20px;
+        }
+    }
+}
 
+@media screen and (max-width:376px) {
+    .services__list{
+        &-column{
+            max-width: 145px;
+            min-height: 245px;
+            margin: 25px 15px 0 15px;
+            svg{
+                margin: 40px 40px 60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:321px) {
+    .services__description{
+        padding: 0;
+    }
+    .services__list{
+        &-column{
+            max-width: 135px;
+            min-height: 245px;
+            margin: 20px 5px 0 10px;
+            svg{
+                margin: 40px 40px 60px;
+            }
+        }
+    }
+}

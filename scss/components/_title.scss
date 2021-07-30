@@ -1,9 +1,54 @@
-h2{
-    @include font(36px, 400, 60px);
-    color: #7D8FB3;
-    text-align: center;
-    span{
-        @include font(36px, 800, 60px);
-        color: #4D5E80;
+.title{
+    h2{
+        @include font(36px, 400, 60px);
+        color: $text-greyBlue70;
+        text-align: center;
+        span{
+            @include font(36px, 800, 60px);
+            color: $text-greyBlue50;
+        }
     }
-    } 
+}
+
+@media screen and (max-width: 769px) {
+    .title{
+        h2{
+            font-size: 34px;
+            span{
+                font-size: 34px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 426px) {
+    .title{
+        h2{
+            font-size: 32px;
+            span{
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .title{
+        h2{
+            font-size: 30px;
+            span{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 312px) {
+    .title{
+        h2{
+            font-size: 28px;
+            span{
+                font-size: 28px;
+            }
+        }
+    }
+}

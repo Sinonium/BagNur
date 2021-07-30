@@ -1,3 +1,4 @@
+@import './helpers/variables';
 @import './helpers/fonts';
 @import './helpers/mixins';
 @import './components/label';
@@ -17,8 +18,9 @@ html{
 }
 
 body{
+    padding: 0;
     margin: 0;
-    background-color: #E5E5E5;
+    background-color: $bg-main;
 }
 
 a{
