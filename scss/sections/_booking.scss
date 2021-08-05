@@ -217,6 +217,40 @@
         margin-left: 10px;
     }
 }
+@media screen and(max-width:541px) {
+    .booking__block__data-item{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 245px;
+        width: 335px;
+        max-width: 450px;
+        h3{
+            padding: 5px 0 5px 19px;
+        }
+        div{
+            margin: 0;
+        }
+    }
+    .booking__block{
+        margin-left: -5px;
+    }
+    .booking__load-more{
+        margin-left: -5px;
+    }
+    .booking__block__data-item-img img{
+        max-width: 140px;
+    }
+    .booking__block__data-item{
+        .booking__block__data-item-img{
+            margin-left: 30px;
+            .cost{
+                left: -5%;
+                font-weight: normal;
+                font-size: 16px;
+            }
+        }
+    }
+}
 
 @media screen and(max-width:426px) {
     .booking__filter__block{
