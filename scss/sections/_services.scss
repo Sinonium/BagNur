@@ -44,6 +44,13 @@
     }
 }
 
+@media screen and(max-width: 1281px) {
+    .services{
+        margin-top: -40px;
+    }
+}
+
+
 @media screen and (max-width:1025px) {
     .services__list-column{
         max-width: 130px;

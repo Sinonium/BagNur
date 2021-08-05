@@ -12,9 +12,6 @@
     <header class='header'>
             <div class="container">
                 <div class="header__panel">
-                    <div class="header__burger-btn">
-                        <span></span>
-                     </div>
                      <div class="header__logo"><a href='index.html'>BagNur</a></div>
                      <div class="header__search">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,6 +29,9 @@
                      </nav>
                      <div class="header__get-in-touch">
                         <a href=''>Get In Touch</a>
+                     </div>
+                     <div class="header__burger-btn">
+                        <span></span>
                      </div>
                 </div>
             </div>
@@ -441,7 +441,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="booking__load-more">Load More</div>
+                <div id='loadMore' class="booking__load-more">Load More</div>
             </div>
         </section>
         <section class="reviews" id="reviews">
@@ -756,11 +756,11 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/slick.min.js"></script>
      <script>
-          $('.reviews__slider').slick({  
+          $('.reviews__slider').slick({
             prevArrow: $('.reviews__prev'),
-            nextArrow: $('.reviews__next'),
-});
-    </script>
+            nextArrow: $('.reviews__next')
+          })
+     </script>
     <script src="./js/promo.js"></script>
     <script src="./js/hero-scroll.js"></script>
     <script src="/slider/nouislider.min.js"></script>
