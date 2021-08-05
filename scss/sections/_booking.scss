@@ -1,7 +1,8 @@
 .booking{    
     &__title{
-        margin: 6px;
-        min-height: 175px;
+        margin: 6px auto;
+        max-width: 750px;
+        min-height: 220px;
         background: url(../images/TRAVEL.png) center no-repeat;
         background-position:top;
         background-size: 100%;
@@ -152,6 +153,173 @@
 
 @media screen and(max-width:1110px) {
     .booking__block__data-item{
-        max-width: calc(100vw / 2 - 127px);
+        max-width: calc(100vw / 2 - 118px);
+    }
+}
+
+@media screen and(max-width:1025px) {
+    .booking__block{
+        margin-left: -15px;
+        &__data-item{
+            div{
+                margin: 6px 5px;
+            }
+        }
+    }
+    .booking__load-more{
+        max-width: 101%;
+        margin-left: -15px;
+    }
+    .booking__block__data-item{
+        .booking__block__data-item-img{
+            margin-top: 20px;
+            .cost{
+                left: 0;
+                font-weight: normal;
+                font-size: 12px;
+            }
+        }
+    }
+    .booking__block__data-item-img img {
+        max-width: 140px;
+    }
+    
+}
+
+@media screen and(max-width:769px) {
+    .booking__block{
+        overflow:hidden;
+    }
+    .booking__block__data{
+        max-height: 900px;
+    }
+    .booking__block__data-item{
+        width: 525px;
+        max-width: 900px;
+    }
+    .booking__block__data-item-img img{
+        max-width: 200px;
+    }
+    .booking__block__data-item{
+        .booking__block__data-item-img{
+            margin-top: 10px;
+            .cost{
+                left: 0;
+                font-weight: normal;
+                font-size: 16px;
+            }
+        }
+    }
+    .booking__block{
+        margin-left: 10px;
+    }
+    .booking__load-more{
+        margin-left: 10px;
+    }
+}
+
+@media screen and(max-width:426px) {
+    .booking__filter__block{
+        max-width: 170px;
+        &-item{
+            &.apply{
+                min-height: 82px;
+            }
+            svg{
+                margin: 0 0 10px;
+            }
+        }
+    }
+    .booking__block__data-item{
+        display: flex;
+        flex-wrap: nowrap;
+        height: 245px;
+        width: 335px;
+        max-width: 450px;
+        h3{
+            padding: 5px 0 5px 19px;
+        }
+        div{
+            margin: 0;
+        }
+    }
+    .booking__block{
+        margin-left: -5px;
+    }
+    .booking__load-more{
+        margin-left: -5px;
+    }
+    .booking__block__data-item-img img{
+        max-width: 140px;
+    }
+    .booking__block__data-item{
+        .booking__block__data-item-img{
+            margin-left: 30px;
+            .cost{
+                left: -5%;
+                font-weight: normal;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:376px) {
+    .booking__block__data-item{
+        h3{
+            padding: 5px 0 5px 8px;
+        }
+        div{
+            font-size: 10px;
+            span{
+                margin: 0 5px 0 12px;
+            }
+        }
+        .booking__block__data-item-img{
+            margin-left: 15px;
+            .cost{
+                left: 1%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:321px) {
+    .booking__block__data-item{
+        h3{
+            margin-left: -54px;
+            transform: scale(0.73);
+        }
+        div{
+            margin-left: -48px;
+            transform: scale(0.75);
+        }
+            .booking__block__data-item-img{
+                transform: scale(0.9);
+                margin-left: -15px;
+                .cost{
+                    left: 1%;
+                    font-weight: normal;
+                    font-size: 16px;
+                }
+            }
+    }
+    .booking__filter__block{
+        max-width: 150px;
+        &-item{
+            min-height: 101.5px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            svg{
+                margin: -20px -5px 10px 3px;
+            }
+            span{
+                margin: 20px 0 20px 2px ;
+            }
+            span.last{
+                margin: 0px 0 0 3px;
+            }
+        }
     }
 }
