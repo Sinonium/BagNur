@@ -66,8 +66,99 @@
 @media screen and (max-width:769px) {
     .footer__block{
         display: inline-block;
+        &-contacts{
+            grid-column-gap: 80%; 
+            @include font (15px, 700, 30px,);
+            }
         &-menu{
-            margin: 40px 0 80px 0;
+        margin: 40px 0;
+            & ul{
+                grid-column-gap: 40%;
+                grid-row-gap: 50%; 
+                @include font(14px, 800, 25px); 
+            }
         }
+    }
+}
+@media screen and (max-width:717px){
+    .footer__block{
+        &-contacts{
+            grid-column-gap: 70%; 
+            @include font (15px, 700, 30px,);
+            }
+        &-menu{
+        margin: 40px 0;
+            & ul{
+                grid-column-gap: 30%;
+                grid-row-gap: 50%; 
+                @include font(14px, 800, 25px); 
+            }
+        }
+    }
+}
+@media screen and (max-width:654px){
+    .footer__block{
+        left: 7%;
+        &-contacts{
+            grid-column-gap: 30%; 
+        }    
+        &-menu{
+                & ul{
+                    grid-column-gap: 20%;
+                }
+            }
+    }
+}
+@media screen and (max-width :540px) {
+    .footer__block{
+        left: -2.5%;
+        &-contacts{
+            grid-column-gap: 25%; 
+        }    
+        &-menu{
+                & ul{
+                    grid-column-gap: 20%;
+                }
+            }
+    }
+}
+@media screen and (max-width :513px) {
+    .footer__block{
+        left: 25%;
+        &-contacts{
+            grid-template-columns: 200px;
+        }    
+        &-menu{
+                & ul{
+                    grid-column-gap: 40%;
+                }
+            }
+    }
+}
+@media screen and (max-width:426px) {
+    .footer__block{
+        left: 20%;
+        &-contacts{
+            display: grid;
+            grid-template-columns: 200px;
+        }    
+        &-menu{
+            margin: 40px 0;
+                & ul{
+                    grid-template-columns: 60px 60px ;
+                    grid-column-gap: 40%;
+                    grid-row-gap: 15%; 
+                }
+            }
+    }
+}
+@media  screen and (max-width:376px) {
+    .footer__block{
+        left: 10%;
+    }
+}
+@media  screen and (max-width:280px) {
+    .footer__block{
+        left: 6%;
     }
 }

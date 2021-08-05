@@ -96,17 +96,9 @@
 #reviews__slider{
     overflow: hidden;
 }
-
-@media screen and (max-width:1025px) {
-    .reviews__insta{
-        transform: scale(0.86);
-        margin-left: -15px;
-    }
-}
-@media screen and (max-width:769px) {
-    .reviews__insta{
-        transform: scale(0.7);
-        margin-left: 10px;
+@media screen and (max-width:1024px){
+    .reviews{
+      display: none;
     }
 }
   
